@@ -27,9 +27,11 @@ jobs:
           python-version: '3.8'
 
       - name: Create and start virtual environment
-        run: |
-          python -m venv venv
-          source venv/bin/activate
+           run:|
+               python -m venv venv
+               ls -la
+               source venv/bin/activate
+
       
       - name: Install dependencies
         run: pip install -r requirements.txt
